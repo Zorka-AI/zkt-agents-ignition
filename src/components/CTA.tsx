@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Calendar } from "lucide-react";
+import ConsultationDialog from "@/components/ConsultationDialog";
 
 const CTA = () => {
   const { t } = useLanguage();
@@ -19,10 +20,14 @@ const CTA = () => {
             <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
               {t('cta.description')}
             </p>
-            <Button size="lg" className="gap-2 gradient-primary text-primary-foreground glow-subtle hover:glow-primary transition-all">
-              <Calendar className="w-5 h-5" />
-              {t('cta.button')}
-            </Button>
+            <ConsultationDialog
+              trigger={
+                <Button size="lg" className="gap-2 gradient-primary text-primary-foreground glow-subtle hover:glow-primary transition-all">
+                  <Calendar className="w-5 h-5" />
+                  {t('cta.button')}
+                </Button>
+              }
+            />
           </div>
         </div>
       </div>

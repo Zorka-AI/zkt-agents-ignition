@@ -1,4 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Button } from "@/components/ui/button";
+import { Mail } from "lucide-react";
+import ConsultationDialog from "@/components/ConsultationDialog";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -18,11 +21,21 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="text-center md:text-right">
-            <p className="text-sm text-muted-foreground">
-              © {currentYear} ZKT-Agents. {t('footer.rights')}
-            </p>
-            <p className="text-xs text-muted-foreground mt-1">zktagents.com</p>
+          <div className="flex flex-col items-center md:items-end gap-3">
+            <ConsultationDialog
+              trigger={
+                <Button variant="outline" size="sm" className="gap-2">
+                  <Mail className="w-4 h-4" />
+                  {t('footer.contact')}
+                </Button>
+              }
+            />
+            <div className="text-center md:text-right">
+              <p className="text-sm text-muted-foreground">
+                © {currentYear} ZKT-Agents. {t('footer.rights')}
+              </p>
+              <p className="text-xs text-muted-foreground mt-1">zktagents.com</p>
+            </div>
           </div>
         </div>
       </div>

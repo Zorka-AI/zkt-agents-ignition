@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ArrowRight, Sparkles } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -37,14 +38,13 @@ const Hero = () => {
           {t('hero.description')}
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" className="gap-2 gradient-primary text-primary-foreground glow-subtle hover:glow-primary transition-all">
-            {t('hero.cta')}
-            <ArrowRight className="w-5 h-5" />
-          </Button>
-          <Button size="lg" variant="outline" className="gap-2">
-            {t('hero.cta.secondary')}
-          </Button>
+        <div className="flex justify-center">
+          <Link to="/services">
+            <Button size="lg" className="gap-2 gradient-primary text-primary-foreground glow-subtle hover:glow-primary transition-all">
+              {t('hero.cta')}
+              <ArrowRight className="w-5 h-5" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
