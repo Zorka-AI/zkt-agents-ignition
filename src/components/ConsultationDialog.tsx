@@ -52,6 +52,20 @@ const ConsultationDialog = ({ trigger }: ConsultationDialogProps) => {
           <DialogDescription className="text-muted-foreground">
             {t('consultation.description')}
           </DialogDescription>
+          <div className="pt-4 space-y-2 border-t mt-4">
+            <p className="text-sm text-muted-foreground flex items-center gap-2">
+              <Phone className="w-4 h-4 text-primary" />
+              <a href="tel:+491234567890" className="hover:text-primary transition-colors">
+                +49 123 456 7890
+              </a>
+            </p>
+            <p className="text-sm text-muted-foreground flex items-center gap-2">
+              <Mail className="w-4 h-4 text-primary" />
+              <a href="mailto:contact@zktagents.com" className="hover:text-primary transition-colors">
+                contact@zktagents.com
+              </a>
+            </p>
+          </div>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4 mt-4">
           <div className="space-y-2">

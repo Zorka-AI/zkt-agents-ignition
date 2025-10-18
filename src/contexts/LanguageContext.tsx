@@ -74,7 +74,7 @@ const translations = {
     
     // Consultation Dialog
     'consultation.title': 'Schedule a Consultation',
-    'consultation.description': 'Fill out the form below and our team will get back to you within 24 hours.',
+    'consultation.description': 'Fill out the form below and our team will get back to you within 24 hours, or reach out directly:',
     'consultation.form.name': 'Full Name',
     'consultation.form.email': 'Email Address',
     'consultation.form.phone': 'Phone Number',
@@ -149,7 +149,7 @@ const translations = {
     
     // Consultation Dialog
     'consultation.title': 'Beratung Vereinbaren',
-    'consultation.description': 'Füllen Sie das untenstehende Formular aus und unser Team wird sich innerhalb von 24 Stunden bei Ihnen melden.',
+    'consultation.description': 'Füllen Sie das untenstehende Formular aus und unser Team wird sich innerhalb von 24 Stunden bei Ihnen melden, oder kontaktieren Sie uns direkt:',
     'consultation.form.name': 'Vollständiger Name',
     'consultation.form.email': 'E-Mail-Adresse',
     'consultation.form.phone': 'Telefonnummer',

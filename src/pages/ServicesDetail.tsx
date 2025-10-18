@@ -1,4 +1,4 @@
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useLanguage, LanguageProvider } from "@/contexts/LanguageContext";
 import { Bot, Zap, Network, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ConsultationDialog from "@/components/ConsultationDialog";
 
-const ServicesDetail = () => {
+const ServicesDetailContent = () => {
   const { t } = useLanguage();
 
   const services = [
@@ -113,6 +113,14 @@ const ServicesDetail = () => {
 
       <Footer />
     </div>
+  );
+};
+
+const ServicesDetail = () => {
+  return (
+    <LanguageProvider>
+      <ServicesDetailContent />
+    </LanguageProvider>
   );
 };
 
