@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg-elegant.jpg";
 import { Link } from "react-router-dom";
 
 const Hero = () => {

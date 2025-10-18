@@ -17,11 +17,16 @@ import { toast } from "@/hooks/use-toast";
 
 interface ConsultationDialogProps {
   trigger: React.ReactNode;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
 }
 
-const ConsultationDialog = ({ trigger }: ConsultationDialogProps) => {
+const ConsultationDialog = ({ trigger, open: externalOpen, onOpenChange: externalOnOpenChange }: ConsultationDialogProps) => {
   const { t } = useLanguage();
-  const [open, setOpen] = useState(false);
+  const [internalOpen, setInternalOpen] = useState(false);
+  
+  const open = externalOpen !== undefined ? externalOpen : internalOpen;
+  const setOpen = externalOnOpenChange || setInternalOpen;
   const [formData, setFormData] = useState({
     name: "",
     email: "",

@@ -83,6 +83,21 @@ const translations = {
     'consultation.form.submit': 'Submit Request',
     'consultation.success.title': 'Request Submitted!',
     'consultation.success.description': 'We will contact you soon to schedule your consultation.',
+    
+    // About Page
+    'about.page.title': 'About ZKT-Agents',
+    'about.page.subtitle': 'Leading the future of intelligent automation and AI-powered business solutions',
+    'about.page.mission.title': 'Our Mission',
+    'about.page.mission.description': 'We are dedicated to empowering businesses through cutting-edge AI technology and intelligent automation. Our mission is to transform how companies operate by delivering custom AI agent solutions that drive efficiency, innovation, and growth.',
+    'about.page.values.title': 'Our Core Values',
+    'about.page.values.innovation.title': 'Innovation First',
+    'about.page.values.innovation.description': 'We stay at the forefront of AI technology, constantly exploring new possibilities to deliver breakthrough solutions.',
+    'about.page.values.collaboration.title': 'Client Partnership',
+    'about.page.values.collaboration.description': 'We work closely with our clients to understand their unique challenges and create tailored solutions.',
+    'about.page.values.results.title': 'Results Driven',
+    'about.page.values.results.description': 'Our focus is on delivering measurable outcomes that directly impact your bottom line.',
+    'about.page.values.expertise.title': 'Technical Excellence',
+    'about.page.values.expertise.description': 'Our team combines deep AI expertise with practical business acumen to deliver solutions that work.',
   },
   de: {
     // Navigation
@@ -158,6 +173,21 @@ const translations = {
     'consultation.form.submit': 'Anfrage Absenden',
     'consultation.success.title': 'Anfrage Eingereicht!',
     'consultation.success.description': 'Wir werden uns bald mit Ihnen in Verbindung setzen, um Ihre Beratung zu vereinbaren.',
+    
+    // About Page
+    'about.page.title': 'Über ZKT-Agents',
+    'about.page.subtitle': 'Die Zukunft intelligenter Automatisierung und KI-gestützter Geschäftslösungen führen',
+    'about.page.mission.title': 'Unsere Mission',
+    'about.page.mission.description': 'Wir sind dem Ziel verpflichtet, Unternehmen durch modernste KI-Technologie und intelligente Automatisierung zu stärken. Unsere Mission ist es, die Arbeitsweise von Unternehmen zu transformieren, indem wir maßgeschneiderte KI-Agentenlösungen liefern, die Effizienz, Innovation und Wachstum fördern.',
+    'about.page.values.title': 'Unsere Kernwerte',
+    'about.page.values.innovation.title': 'Innovation Zuerst',
+    'about.page.values.innovation.description': 'Wir bleiben an der Spitze der KI-Technologie und erforschen ständig neue Möglichkeiten, um bahnbrechende Lösungen zu liefern.',
+    'about.page.values.collaboration.title': 'Kundenpartnerschaft',
+    'about.page.values.collaboration.description': 'Wir arbeiten eng mit unseren Kunden zusammen, um ihre einzigartigen Herausforderungen zu verstehen und maßgeschneiderte Lösungen zu entwickeln.',
+    'about.page.values.results.title': 'Ergebnisorientiert',
+    'about.page.values.results.description': 'Unser Fokus liegt auf der Lieferung messbarer Ergebnisse, die sich direkt auf Ihr Geschäftsergebnis auswirken.',
+    'about.page.values.expertise.title': 'Technische Exzellenz',
+    'about.page.values.expertise.description': 'Unser Team kombiniert tiefe KI-Expertise mit praktischem Geschäftssinn, um Lösungen zu liefern, die funktionieren.',
   },
 };
 
