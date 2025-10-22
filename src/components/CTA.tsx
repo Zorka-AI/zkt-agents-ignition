@@ -14,7 +14,7 @@ const CTA = () => {
           <div className="absolute inset-0 gradient-primary opacity-10 blur-3xl" />
           
           <div className="relative z-10 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            <h2 className="text-4xl md:text-5xl font-display font-medium mb-6 text-foreground tracking-tighter">
               {t('cta.title')}
             </h2>
             <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
@@ -22,7 +22,7 @@ const CTA = () => {
             </p>
             <ConsultationDialog
               trigger={
-                <Button size="lg" className="gap-2 gradient-primary text-primary-foreground glow-subtle hover:glow-primary transition-all">
+                <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90 transition-all">
                   <Calendar className="w-5 h-5" />
                   {t('cta.button')}
                 </Button>

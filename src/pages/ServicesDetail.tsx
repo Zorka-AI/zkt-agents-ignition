@@ -70,7 +70,7 @@ const ServicesDetailContent = () => {
       <main className="pt-24">
         <section className="py-16 text-center">
           <div className="container mx-auto px-4">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground animate-fade-in">
+            <h1 className="text-5xl md:text-6xl font-display font-medium mb-6 text-foreground animate-fade-in tracking-tighter">
               {t('services.detail.hero.title')}
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -89,10 +89,10 @@ const ServicesDetailContent = () => {
             <div className="container mx-auto px-4">
               <Card className="glass-effect border-border overflow-hidden">
                 <CardHeader className="text-center pb-8">
-                  <div className="w-20 h-20 rounded-full gradient-primary flex items-center justify-center mx-auto mb-6">
-                    <service.icon className="w-10 h-10 text-primary-foreground" />
+                  <div className="w-20 h-20 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mx-auto mb-6">
+                    <service.icon className="w-10 h-10 text-primary" />
                   </div>
-                  <CardTitle className="text-4xl mb-4 text-foreground">{service.title}</CardTitle>
+                  <CardTitle className="text-4xl font-display font-medium mb-4 text-foreground tracking-tighter">{service.title}</CardTitle>
                   <CardDescription className="text-lg text-muted-foreground max-w-2xl mx-auto">
                     {service.description}
                   </CardDescription>
@@ -112,7 +112,7 @@ const ServicesDetailContent = () => {
                   <div className="text-center pt-4">
                     <ConsultationDialog
                       trigger={
-                        <Button size="lg" className="gap-2 gradient-primary text-primary-foreground">
+                        <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90">
                           {t('services.detail.cta')}
                           <ArrowRight className="w-5 h-5" />
                         </Button>

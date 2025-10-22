@@ -30,7 +30,7 @@ const Hero = () => {
           <span className="text-sm text-muted-foreground">{t('hero.title')}</span>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
+        <h1 className="text-5xl md:text-7xl font-display font-medium mb-6 text-foreground tracking-tighter">
           {t('hero.subtitle')}
         </h1>
         
@@ -40,7 +40,7 @@ const Hero = () => {
         
         <div className="flex justify-center">
           <Link to="/services">
-            <Button size="lg" className="gap-2 gradient-primary text-primary-foreground glow-subtle hover:glow-primary transition-all">
+            <Button size="lg" className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90 transition-all">
               {t('hero.cta')}
               <ArrowRight className="w-5 h-5" />
             </Button>
