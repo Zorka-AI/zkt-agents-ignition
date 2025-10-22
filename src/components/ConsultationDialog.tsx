@@ -37,7 +37,31 @@ const ConsultationDialog = ({ trigger, open: externalOpen, onOpenChange: externa
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
+    
+    // Save to text file for testing
+    const timestamp = new Date().toISOString();
+    const content = `
+=== Contact Request ===
+Date: ${timestamp}
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Company: ${formData.company}
+Message: ${formData.message}
+====================
+
+`;
+    
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `contact-request-${Date.now()}.txt`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
     toast({
       title: t('consultation.success.title'),
       description: t('consultation.success.description'),

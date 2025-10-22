@@ -4,6 +4,7 @@ import { Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import ConsultationDialog from "@/components/ConsultationDialog";
+import logo from "@/assets/zkt-logo.png";
 
 const Header = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -13,9 +14,7 @@ const Header = () => {
     <header className="fixed top-0 w-full z-50 glass-effect border-b border-border">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-            <span className="text-xl font-bold text-primary-foreground">Z</span>
-          </div>
+          <img src={logo} alt="ZKT-Agents Logo" className="w-10 h-10" />
           <span className="text-xl font-bold text-foreground">ZKT-Agents</span>
         </Link>
         
